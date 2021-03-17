@@ -34,7 +34,7 @@ export default class World
          * Brush texture
          */
         const textureLoader = new THREE.TextureLoader()
-        this.brushTexture = textureLoader.load('/textures/brushes/brush3.png')
+        this.brushTexture = textureLoader.load('./textures/brushes/brush3.png')
 
         this.setModel()
     }
@@ -44,12 +44,12 @@ export default class World
         const cubeTextureLoader = new THREE.CubeTextureLoader()
 
         this.environmentMap = cubeTextureLoader.load([
-            '/textures/environmentMaps/0/px.jpg',
-            '/textures/environmentMaps/0/nx.jpg',
-            '/textures/environmentMaps/0/py.jpg',
-            '/textures/environmentMaps/0/ny.jpg',
-            '/textures/environmentMaps/0/pz.jpg',
-            '/textures/environmentMaps/0/nz.jpg'
+            './textures/environmentMaps/0/px.jpg',
+            './textures/environmentMaps/0/nx.jpg',
+            './textures/environmentMaps/0/py.jpg',
+            './textures/environmentMaps/0/ny.jpg',
+            './textures/environmentMaps/0/pz.jpg',
+            './textures/environmentMaps/0/nz.jpg'
         ])
         
         this.environmentMap.encoding = THREE.sRGBEncoding

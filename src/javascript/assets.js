@@ -4,7 +4,7 @@ export default [
         data: {},
         items:
         [
-            { name: 'worldModel', source: '/world.glb' }
+            { name: 'worldModel', source: './world.glb' }
         ]
     }
 ]
